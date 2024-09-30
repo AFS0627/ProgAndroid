@@ -6,7 +6,6 @@
     android:background="#FFFFFF"
     android:padding="16dp">
 
-    <!-- Título do formulário -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,14 +17,12 @@
         android:padding="16dp"
         android:textStyle="bold"/>
 
-    <!-- Formulário em layout horizontal -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="16dp">
 
-        <!-- Label Nome -->
         <TextView
             android:layout_width="80dp"
             android:layout_height="wrap_content"
@@ -35,7 +32,6 @@
             android:textColor="#757575"
             android:textSize="16sp" />
 
-        <!-- Campo de entrada Nome -->
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,8 +45,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="16dp">
-
-        <!-- Label Email -->
+        
         <TextView
             android:layout_width="77dp"
             android:layout_height="wrap_content"
@@ -60,7 +55,6 @@
             android:textColor="#757575"
             android:textSize="16sp" />
 
-        <!-- Campo de entrada Email -->
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +64,6 @@
             android:textSize="16sp"/>
     </LinearLayout>
 
-    <!-- Botão -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
