@@ -3,8 +3,12 @@ package com.example.listagem;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     String[] nomes = new String[] {"picareta, nome, peco"};
@@ -20,5 +24,15 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 nomes);
         listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l){
+
+        Toast.makeText(getApplicationContext(),Integer.toString(i)+
+                "  "+
+                nomes[i],Toast.LENGTH_LONG).show();
+        }
+
+    });
+
     }
 }
